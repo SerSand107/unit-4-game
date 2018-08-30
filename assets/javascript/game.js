@@ -32,7 +32,7 @@ var addNumbers = function(value) {
 
 if (userNumber === compNumber) {
     wins++;
-    console.log("wins="+wins);
+    // console.log("wins="+wins);
     document.querySelector("#wins").innerHTML = wins;
     alert("You've collected a Saber Crystal");
     reset();
@@ -40,7 +40,7 @@ if (userNumber === compNumber) {
 
 if (userNumber > compNumber) {
     losses++
-    console.log("losses="+losses);
+    // console.log("losses="+losses);
     document.querySelector("#losses").innerHTML = losses;
     reset();
     }
@@ -59,33 +59,33 @@ if (userNumber > compNumber) {
 
     // Assign Random Number value to Computer
     compNumber = chooseRandom(19, 120);
-    console.log("compNumber" + compNumber);
+    // console.log("compNumber" + compNumber);
     $("#comp-number").text(compNumber);
 
 
     $("#blue").on("click", function() {
         // User click appends value to DOM, Add value of crystal to userNumber
         addNumbers(blue);
-        console.log(`this is blue ${blue}`);
+        // console.log(`this is blue ${blue}`);
         $("#user-number").text(userNumber);
 
     });
 
     $("#green").on("click", function() {
-        console.log(`this is green ${green}`);
+        // console.log(`this is green ${green}`);
         addNumbers(green);
         $("#user-number").text(userNumber);
 
     });
 
     $("#purple").on("click", function() {
-        console.log(`this is purple ${purple}`);
+        // console.log(`this is purple ${purple}`);
         addNumbers(purple);
         $("#user-number").text(userNumber);
     });
 
     $("#red").on("click", function() {
-        console.log(`this is red ${red}`);
+        // console.log(`this is red ${red}`);
         addNumbers(red);
         $("#user-number").text(userNumber);
     });
